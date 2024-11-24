@@ -1,17 +1,12 @@
-import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
+import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-root',
+  imports: [RouterOutlet],
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  title = 'ecommerce-angular-app';
-
-  constructor(private http: HttpClient){
-    // this.http.get('https://ecommerce-backend-8dwc.onrender.com/api/users/').subscribe(data => {
-    //   console.log(data);
-    // })
-  }
+  title = 'ecommerce-app';
 }
